@@ -1,12 +1,82 @@
-# React + Vite
+# Zenboard - Task Board Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Zenboard is a task management application built with React, designed to help teams organize and collaborate efficiently. It allows users to create boards, columns, and tasks, and to manage them with features like drag-and-drop, filtering, and prioritization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features Breakdown
 
-## Expanding the ESLint configuration
+1. **Board Management**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   - Create and manage multiple boards
+   - Intuitive board listing with search functionality
+   - Delete boards with confirmation to prevent accidents
+
+2. **Column Organization**
+
+   - Horizontal layout for better visualization
+   - Drag-and-drop column reordering
+   - Customizable column titles
+
+3. **Task Management**
+   - Rich task details including title, description, priority, and due dates
+   - Drag-and-drop between columns
+   - Vertical stacking within columns
+   - Advanced filtering and search capabilities
+
+## Tech Stack
+
+- **Frontend:** React with Hooks
+- **Styling:** Tailwind CSS (no component libraries used)
+- **State Management:** Context API
+- **Data Persistence:** Local Storage
+- **DnD Implementation:** @dnd-kit library
+
+## Local Development
+
+1. **Clone & Install:**
+
+   ```bash
+   git clone <repository-url>
+   cd zenboard
+   npm install
+   ```
+
+2. **Start Development Server:**
+   ```bash
+   npm run dev
+   ```
+   Access the app at `http://localhost:5173`
+
+## Project Structure
+
+```
+src/
+├── components/     # UI components
+├── context/       # Global state management
+├── styles/        # Global styles
+└── utils/         # Helper functions
+```
+
+## Key Features in Detail
+
+- **Responsive Design:** Works seamlessly on desktop and tablet
+- **Dark Mode:** Built-in theme switching capability
+- **Data Persistence:** Auto-saves to localStorage
+- **Error Handling:** Graceful error handling with user feedback
+
+## Live Demo
+
+Visit [Zenboard Live](deployment-link) to try the application.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit changes with meaningful messages
+4. Push to your branch
+5. Open a Pull Request
+
+## License
+
+[MIT](LICENSE)
