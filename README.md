@@ -1,4 +1,4 @@
-# Zenboard - Task Board Application
+# Zenboard - Task Board Application | [Zenboard Live](<[deployment-link](https://zenboard-eight.vercel.app/)>)
 
 ## Overview
 
@@ -67,7 +67,7 @@ src/
 
 ## Live Demo
 
-Visit [Zenboard Live](deployment-link) to try the application.
+Visit [Zenboard Live](<[deployment-link](https://zenboard-eight.vercel.app/)>) to try the application.
 
 ## Contributing
 
